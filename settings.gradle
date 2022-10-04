@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        ///
+        maven {
+            url 'http://maven.djWjrn.wjWjrn/dadd-public'
+            allowInsecureProtocol true
+        }
+       // 출처: https://acet.pe.kr/933 [Story Of ace-T:티스토리]
+    }
+}
+rootProject.name = "MyWebview"
+include ':app'
